@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L&M Drywall | Expert Drywall Services in Omaha, NE</title>
+    <meta name="description" content="Professional drywall installation, finishing, and framing in Omaha. Responsive service, quality workmanship, affordable pricing. Call (531) 210-8669 for your free estimate.">
+    <meta name="keywords" content="drywall Omaha, drywall installation, framing services, sheetrock hanging, drywall finishing, bathroom tile, Omaha NE">
+
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy-blue: #1a3a5c;
+            --navy-dark: #0f2438;
+            --orange: #ff6b35;
+            --orange-dark: #e85a28;
+            --light-gray: #f8f9fa;
+            --medium-gray: #6c757d;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--navy-blue);
+        }
+
+        .logo span {
+            color: var(--orange);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--navy-blue);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--orange);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--orange);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--navy-blue);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-blue) 100%);
+            color: var(--white);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--orange);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--orange-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--navy-blue);
+        }
+
+        .trust-points {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-point {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .trust-point::before {
+            content: '✓';
+            background: var(--orange);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--navy-blue);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--orange);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--navy-blue);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--medium-gray);
+            line-height: 1.7;
+        }
+
+        /* Why Choose Us */
+        .why-choose-us {
+            background: var(--light-gray);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature-icon {
+            background: var(--orange);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .feature h3 {
+            color: var(--navy-blue);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature p {
+            color: var(--medium-gray);
+            line-height: 1.7;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-content .highlight {
+            color: var(--navy-blue);
+            font-weight: 600;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--navy-blue);
+            color: var(--white);
+        }
+
+        .testimonials .section-header h2 {
+            color: var(--white);
+        }
+
+        .testimonials .section-header p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .testimonial-stars {
+            color: var(--orange);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--orange);
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: var(--light-gray);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            background: var(--orange);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .step h3 {
+            color: var(--navy-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+        }
+
+        .step p {
+            color: var(--medium-gray);
+        }
+
+        /* FAQ Section */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--orange);
+        }
+
+        .faq-item h3 {
+            color: var(--navy-blue);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .faq-item p {
+            color: var(--medium-gray);
+            line-height: 1.7;
+        }
+
+        .faq-item ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .faq-item li {
+            color: var(--medium-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--light-gray);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info h3 {
+            color: var(--navy-blue);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-detail-icon {
+            color: var(--orange);
+            font-size: 1.5rem;
+            margin-top: 0.2rem;
+        }
+
+        .contact-detail-text h4 {
+            color: var(--navy-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-detail-text p {
+            color: var(--medium-gray);
+        }
+
+        .contact-detail-text a {
+            color: var(--orange);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-detail-text a:hover {
+            text-decoration: underline;
+        }
+
+        .reassurance {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            border-left: 4px solid var(--orange);
+        }
+
+        .reassurance p {
+            color: var(--medium-gray);
+            font-style: italic;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--navy-blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--orange);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2.5rem 2rem;
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                right: -100%;
+                top: 70px;
+                flex-direction: column;
+                background: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: var(--shadow-lg);
+                padding: 2rem 0;
+                gap: 0;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links li {
+                padding: 1rem 0;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .trust-points {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .btn {
+                padding: 0.875rem 2rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">L&M <span>Drywall</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Us</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                ☰
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Expert Drywall & Finishing Services in Omaha</h1>
+            <p>Quality workmanship and responsive service for your home or business. Led by Maria, we deliver exceptional results at affordable prices.</p>
+            <div class="cta-buttons">
+                <a href="tel:5312108669" class="btn btn-primary">Call Now: (531) 210-8669</a>
+                <a href="#contact" class="btn btn-secondary">Request Service</a>
+            </div>
+            <div class="trust-points">
+                <div class="trust-point">Responsive Service</div>
+                <div class="trust-point">Quality Workmanship</div>
+                <div class="trust-point">Affordable Pricing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Professional drywall and finishing solutions for residential and commercial properties in Omaha</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3>Drywall Installation</h3>
+                    <p>Expert drywall installation for new construction and renovations. We ensure precise measurements and professional results every time.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Framing Services</h3>
+                    <p>Quality framing work that provides the perfect foundation for your drywall. Built to last with attention to structural integrity.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📏</div>
+                    <h3>Sheetrock Hanging</h3>
+                    <p>Professional sheetrock hanging with precision and care. We handle projects of all sizes with the same level of dedication.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Drywall Finishing</h3>
+                    <p>Smooth, flawless finishing that's ready for paint. Our attention to detail ensures a perfect final product.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛁</div>
+                    <h3>Bathroom Tile Installation</h3>
+                    <p>Beautiful, durable tile work for bathrooms. From floors to walls, we create spaces you'll love.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Residential Services</h3>
+                    <p>Complete drywall solutions for homeowners in Omaha. From repairs to full installations, we've got you covered.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Commercial Services</h3>
+                    <p>Professional commercial drywall services for businesses and contractors. Reliable, efficient, and high-quality work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose L&M Drywall</h2>
+                <p>We're committed to delivering exceptional service on every project</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Highly Responsive</h3>
+                    <p>Maria and our team reply quickly to your calls and messages. We understand your time is valuable and we respect that.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Quality Workmanship</h3>
+                    <p>Attention to detail on every project, no matter the size. We take pride in our work and it shows in the results.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Fair, transparent rates for Omaha homeowners and businesses. Quality work doesn't have to break the bank.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Residential & Commercial</h3>
+                    <p>We handle projects of all sizes with the same level of professionalism and dedication to excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About L&M Drywall</h2>
+                <p>Your trusted partner for drywall services in Omaha, NE</p>
+            </div>
+            <div class="about-content">
+                <p><span class="highlight">Led by Maria</span>, L&M Drywall has built a reputation for excellence in the Omaha area. We specialize in providing top-quality drywall installation, framing, finishing, and tile work for both residential and commercial clients.</p>
+                <p>Our team combines years of expertise with a genuine commitment to customer satisfaction. Whether you're a homeowner looking to renovate or a contractor needing reliable drywall services, we bring the same level of professionalism and attention to detail to every project.</p>
+                <p>We're proud to serve the Omaha community with <span class="highlight">responsive service, quality workmanship, and affordable pricing</span>. When you choose L&M Drywall, you're choosing a team that truly cares about the quality of your project and your complete satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Don't just take our word for it - hear from our satisfied clients</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Maria and her team were great! Maria was very responsive. The work that was done was amazing. Definitely recommend these guys for any dry wall needs in the Omaha area!"</p>
+                    <p class="testimonial-author">— Satisfied Customer</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The quality of work exceeded our expectations. Maria was incredibly responsive throughout the entire project and the pricing was very fair. Will definitely use them again!"</p>
+                    <p class="testimonial-author">— Local Homeowner</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Professional, affordable, and excellent results. Maria's attention to detail and quick communication made our renovation project stress-free. Highly recommend L&M Drywall!"</p>
+                    <p class="testimonial-author">— Omaha Business Owner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple, straightforward process from start to finish</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Call for Free Estimate</h3>
+                    <p>Reach out to us by phone or through our contact form. We'll schedule a time to discuss your project.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>We Assess Your Project</h3>
+                    <p>Maria will evaluate your needs and provide expert recommendations tailored to your specific situation.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>You'll receive a clear, detailed estimate with no hidden fees. We believe in honest, upfront pricing.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Quality Work, On Time</h3>
+                    <p>We complete your project with attention to detail and respect for your timeline and budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Get answers to common questions about our services</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Do you offer free estimates?</h3>
+                    <p>Yes! We provide free, no-obligation estimates for all our services. Contact us today to schedule yours.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What areas do you serve?</h3>
+                    <p>We proudly serve Omaha, NE 68105 and the surrounding areas. If you're unsure whether we cover your location, give us a call and we'll let you know.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you handle both residential and commercial projects?</h3>
+                    <p>Absolutely! We have extensive experience with both residential and commercial drywall projects. No job is too big or too small for our team.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What services do you provide?</h3>
+                    <p>We offer a comprehensive range of services including:</p>
+                    <ul>
+                        <li>Drywall Installation</li>
+                        <li>Framing Services</li>
+                        <li>Sheetrock Hanging</li>
+                        <li>Drywall Finishing</li>
+                        <li>Bathroom Tile Installation</li>
+                        <li>Residential & Commercial Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your project? Contact us today for a free estimate</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">📍</div>
+                        <div class="contact-detail-text">
+                            <h4>Location</h4>
+                            <p>Omaha, NE 68105</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">📞</div>
+                        <div class="contact-detail-text">
+                            <h4>Phone</h4>
+                            <p><a href="tel:5312108669">(531) 210-8669</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">⏰</div>
+                        <div class="contact-detail-text">
+                            <h4>Availability</h4>
+                            <p>Monday - Saturday<br>Contact us for scheduling</p>
+                        </div>
+                    </div>
+                    <a href="tel:5312108669" class="btn btn-primary" style="margin-top: 2rem; display: inline-block;">Call Now</a>
+                    <div class="reassurance">
+                        <p><strong>No pressure - we'll listen and help you decide what's best.</strong> We're here to answer your questions and provide honest advice for your project.</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Project Details *</label>
+                            <textarea id="project" name="project" required placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Free Estimate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 L&M Drywall. All rights reserved. | Omaha, NE 68105 | <a href="tel:5312108669" style="color: var(--orange); text-decoration: none;">(531) 210-8669</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 70;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your interest! Maria will contact you shortly. For immediate assistance, please call (531) 210-8669.');
+            event.target.reset();
+        }
+
+        // Add header shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
